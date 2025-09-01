@@ -1,10 +1,10 @@
 # codelab_dart
 
-Nama : Raudhil Firdaus Naufal
+**Nama : Raudhil Firdaus Naufal** 
 
-NIM : 2341720164
+**NIM : 2341720164**  
 
-Kelas : TI-3G
+**Kelas : TI-3G**
 
 | Weeks   | PROJECTS                        | LINKS                                                                 |
 |---------|---------------------------------|----------------------------------------------------------------------|
