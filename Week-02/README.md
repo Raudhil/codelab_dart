@@ -13,7 +13,7 @@
 ![alt text](img/gambar1.png)
 
 Output
-
+    
 ![alt text](img/gambar2.png)
 
 # Soal 2
