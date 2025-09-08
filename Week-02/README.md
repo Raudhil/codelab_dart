@@ -12,7 +12,7 @@
 
 ![alt text](img/gambar1.png)
 
-Output
+Output:
     
 ![alt text](img/gambar2.png)
 
