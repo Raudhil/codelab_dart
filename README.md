@@ -8,6 +8,6 @@
 
 | Weeks   | PROJECTS                        | LINKS                                                                 |
 |---------|---------------------------------|----------------------------------------------------------------------|
-| Week 01 | 'Pengantar Pemrograman Mobile'           |  |
-| Week 02 | 'Pengantar Bahasa Pemrograman Dart - Bagian 1' |  |
+| Week 01 | 'Pengantar Pemrograman Mobile'           | https://github.com/Raudhil/codelab_dart/tree/main/Week-01 |
+| Week 02 | 'Pengantar Bahasa Pemrograman Dart - Bagian 1' | https://github.com/Raudhil/codelab_dart/tree/main/Week-02 |
 
