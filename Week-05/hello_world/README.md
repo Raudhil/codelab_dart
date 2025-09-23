@@ -38,6 +38,14 @@
 
 **Langkah 3:**
 
+![alt text](img/gambar7.png)
 
+**Langkah 4:**
+
+![alt text](img/gambar8.png)
+
+**Langkah 5:**
+
+![alt text](img/01.png)
 
 
