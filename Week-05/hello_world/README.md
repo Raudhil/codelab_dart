@@ -34,6 +34,10 @@
 
 **Langkah 2:**
 
+![alt text](img/gambar6.png)
+
+**Langkah 3:**
+
 
 
 
