@@ -70,7 +70,7 @@ Melakukan push ke repository github yang sudah tersedia lalu menjalankan kode da
 
 ![alt text](hello_world/img/gambar12.png)
 
-Berhasil membuat fungsi yang dimana halaman utama bisa mengambil fungsi dari kode di file yang lain dengan melakukan import terlebih dahulu
+Berhasil  membuat fungsi yang dimana halaman utama bisa mengambil fungsi dari kode di file yang lain dengan melakukan import terlebih dahulu
 
 **Langkah 2: Image Widget**
 
