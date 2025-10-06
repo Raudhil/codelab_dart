@@ -12,25 +12,25 @@
 
 **Langkah 1:**
 
-![alt text](img/gambar1.png)
+![alt text](hello_world/img/gambar1.png)
 
 **Langkah 2:**
 
-![alt text](img/gambar2.png)
+![alt text](hello_world/img/gambar2.png)
 
 **Langkah 3:**
 
-![alt text](img/gambar3.png)
+![alt text](hello_world/img/gambar3.png)
 
 Membuat project baru dengan cara ctrl + shift + p, lalu membuat file flutter baru sehingga mendapat template dari flutter yang sudah bisa dijalankan
 
 # Praktikum 2: Menghubungkan Perangkat Android atau Emulator
 
-![alt text](img/gambar4.png)
+![alt text](hello_world/img/gambar4.png)
 
-![alt text](img/gambar8.png)
+![alt text](hello_world/img/gambar8.png)
 
-![alt text](img/gambar20.png)
+![alt text](hello_world/img/gambar20.png)
 
 Menghubungkan dengan beberapa cara, salah satunya dengan USB dari laptop ke android
 
@@ -38,43 +38,43 @@ Menghubungkan dengan beberapa cara, salah satunya dengan USB dari laptop ke andr
 
 **Langkah 1:**
 
-![alt text](img/gambar5.png)
+![alt text](hello_world/img/gambar5.png)
 
 **Langkah 2:**
 
-![alt text](img/gambar6.png)
+![alt text](hello_world/img/gambar6.png)
 
 **Langkah 3:**
 
-![alt text](img/gambar7.png)
+![alt text](hello_world/img/gambar7.png)
 
 **Langkah 4:**
 
-![alt text](img/gambar8.png)
+![alt text](hello_world/img/gambar8.png)
 
 Melakukan push ke repository github yang sudah tersedia lalu menjalankan kode dan membuka tampilan dari flutter yang sudah dibuat
 
 **Langkah 5:**
 
-![alt text](img/01.png)
+![alt text](hello_world/img/01.png)
 
 # Praktikum 4: Menerapkan Widget Dasar
 
 **Langkah 1: Text Widget**
 
-![alt text](img/gambar9.png)
+![alt text](hello_world/img/gambar9.png)
 
-![alt text](img/gambar10.png)
+![alt text](hello_world/img/gambar10.png)
 
-![alt text](img/gambar11.png)
+![alt text](hello_world/img/gambar11.png)
 
-![alt text](img/gambar12.png)
+![alt text](hello_world/img/gambar12.png)
 
 Berhasil membuat fungsi yang dimana halaman utama bisa mengambil fungsi dari kode di file yang lain dengan melakukan import terlebih dahulu
 
 **Langkah 2: Image Widget**
 
-![alt text](img/gambar13.png)
+![alt text](hello_world/img/gambar13.png)
 
 Berhasil memasukkan gambar ke dalam halaman website dengan cara mengimport widget gambar lalu menambahkan direktori baru di pubspec.yaml untuk gambar
 
@@ -82,33 +82,33 @@ Berhasil memasukkan gambar ke dalam halaman website dengan cara mengimport widge
 
 **Langkah 1: Cupertino Button dan Loading Bar**
 
-![alt text](img/gambar14.png)
+![alt text](hello_world/img/gambar14.png)
 
 **Langkah 2: Floating Action Button (FAB)**
 
-![alt text](img/gambar15.png)
+![alt text](hello_world/img/gambar15.png)
 
 **Langkah 3: Scaffold Widget**
 
-![alt text](img/gambar16.png)
+![alt text](hello_world/img/gambar16.png)
 
 **Langkah 4: Dialog Widget**
 
-![alt text](img/gambar17.png)
+![alt text](hello_world/img/gambar17.png)
 
 **Langkah 5: Input dan Selection Widget**
 
-![alt text](img/gambar18.png)
+![alt text](hello_world/img/gambar18.png)
 
 **Langkah 6: Date and Time Pickers**
 
-![alt text](img/gambar19.png)
+![alt text](hello_world/img/gambar19.png)
 
 Pada kode diatas kita membuat beberapa fitur yang bisa dimunculkan di flutter
 
 # Soal 2 Selesaikan Praktikum 2 dan Anda wajib menjalankan aplikasi hello_world pada perangkat fisik (device Android/iOS) agar Anda mempunyai pengalaman untuk menghubungkan ke perangkat fisik. Capture hasil aplikasi di perangkat, lalu buatlah laporan praktikum pada file README.md.
 
-![alt text](img/gambar20.png)
+![alt text](hello_world/img/gambar20.png)
 
 Berhasil menghubungkan antara device laptop dengan android, dengan cara menggunakan kabel USB, lalu run flutter dengan terminal, setelah itu diinstall di android.
 
@@ -116,25 +116,25 @@ Berhasil menghubungkan antara device laptop dengan android, dengan cara mengguna
 
 Langkah 3:
 
-![alt text](img/gambar21.png)
+![alt text](hello_world/img/gambar21.png)
 
 Mengganti Tampilan
 
 Langkah 4:
 
-![alt text](img/gambar22.png)
+![alt text](hello_world/img/gambar22.png)
 
 Memunculkan Alert
 
 Langkah 5:
 
-![alt text](img/gambar23.png)
+![alt text](hello_world/img/gambar23.png)
 
 Bisa memasukkan input
 
 Langkah 6:
 
-![alt text](img/gambar24.png)
+![alt text](hello_world/img/gambar24.png)
 
 Memilih Tanggal
 
@@ -142,13 +142,13 @@ Memilih Tanggal
 
 **Membuat Projek**
 
-![alt text](img/gambar25.png)
+![alt text](hello_world/img/gambar25.png)
 
-![alt text](img/gambar26.png)
+![alt text](hello_world/img/gambar26.png)
 
-![alt text](img/gambar27.png)
+![alt text](hello_world/img/gambar27.png)
 
-![alt text](img/gambar28.png)
+![alt text](hello_world/img/gambar28.png)
 
 Diatas saya mengganti kode-kode sesuai instruksi dari jobsheet
 
@@ -156,145 +156,145 @@ Diatas saya mengganti kode-kode sesuai instruksi dari jobsheet
 
 Menambah teks
 
-![alt text](img/gambar29.png)
+![alt text](hello_world/img/gambar29.png)
 
 Mengganti teks
 
-![alt text](img/gambar30.png)
+![alt text](hello_world/img/gambar30.png)
 
 Menambah tombol
 
-![alt text](img/gambar31.png)
+![alt text](hello_world/img/gambar31.png)
 
 Mengacak Huruf
 
-![alt text](img/gambar32.png)
+![alt text](hello_world/img/gambar32.png)
 
-![alt text](img/gambar33.png)
+![alt text](hello_world/img/gambar33.png)
 
 Output 1
 
-![alt text](img/gambar34.png)
+![alt text](hello_world/img/gambar34.png)
 
 Output 2
 
-![alt text](img/gambar35.png)
+![alt text](hello_world/img/gambar35.png)
 
 Output 3
 
-![alt text](img/gambar36.png)
+![alt text](hello_world/img/gambar36.png)
 
 **Memperindah tampilan aplikasi**
 
 Mengekstrak widget
 
-![alt text](img/gambar37.png)
+![alt text](hello_world/img/gambar37.png)
 
-![alt text](img/gambar38.png)
+![alt text](hello_world/img/gambar38.png)
 
-![alt text](img/gambar39.png)
+![alt text](hello_world/img/gambar39.png)
 
 Menambahkan Kartu
 
-![alt text](img/gambar40.png)
+![alt text](hello_world/img/gambar40.png)
 
-![alt text](img/gambar41.png)
+![alt text](hello_world/img/gambar41.png)
 
-![alt text](img/gambar42.png)
+![alt text](hello_world/img/gambar42.png)
 
-![alt text](img/gambar43.png)
+![alt text](hello_world/img/gambar43.png)
 
-![alt text](img/gambar44.png)
+![alt text](hello_world/img/gambar44.png)
 
 TextTheme
 
-![alt text](img/gambar45.png)
+![alt text](hello_world/img/gambar45.png)
 
-![alt text](img/gambar46.png)
+![alt text](hello_world/img/gambar46.png)
 
-![alt text](img/gambar47.png)
+![alt text](hello_world/img/gambar47.png)
 
 Menempatkan UI di tengah
 
-![alt text](img/gambar48.png)
+![alt text](hello_world/img/gambar48.png)
 
-![alt text](img/gambar49.png)
+![alt text](hello_world/img/gambar49.png)
 
-![alt text](img/gambar50.png)
+![alt text](hello_world/img/gambar50.png)
 
-![alt text](img/gambar51.png)
+![alt text](hello_world/img/gambar51.png)
 
-![alt text](img/gambar52.png)
+![alt text](hello_world/img/gambar52.png)
 
-![alt text](img/gambar53.png)
+![alt text](hello_world/img/gambar53.png)
 
 **Menambahkan fungsi**
 
 Menambahkan logika bisnis
 
-![alt text](img/gambar54.png)
+![alt text](hello_world/img/gambar54.png)
 
 Menambahkan tombol
 
-![alt text](img/gambar55.png)
+![alt text](hello_world/img/gambar55.png)
 
-![alt text](img/gambar56.png)
+![alt text](hello_world/img/gambar56.png)
 
-![alt text](img/gambar57.png)
+![alt text](hello_world/img/gambar57.png)
 
-![alt text](img/gambar58.png)
+![alt text](hello_world/img/gambar58.png)
 
-![alt text](img/gambar59.png)
+![alt text](hello_world/img/gambar59.png)
 
 Menambahkan kolom samping navigasi
 
-![alt text](img/gambar60.png)
+![alt text](hello_world/img/gambar60.png)
 
-![alt text](img/gambar61.png)
+![alt text](hello_world/img/gambar61.png)
 
 Widget stateless versus stateful
 
-![alt text](img/gambar62.png)
+![alt text](hello_world/img/gambar62.png)
 
 setState
 
-![alt text](img/gambar63.png)
+![alt text](hello_world/img/gambar63.png)
 
 Output 1
 
-![alt text](img/gambar64.png)
+![alt text](hello_world/img/gambar64.png)
 
 Output 2
 
-![alt text](img/gambar65.png)
+![alt text](hello_world/img/gambar65.png)
 
 Menggunakan selectedIndex
 
-![alt text](img/gambar66.png)
+![alt text](hello_world/img/gambar66.png)
 
 Output 1
 
-![alt text](img/gambar67.png)
+![alt text](hello_world/img/gambar67.png)
 
 Output 2
 
-![alt text](img/gambar68.png)
+![alt text](hello_world/img/gambar68.png)
 
 Tingkat respons
 
-![alt text](img/gambar69.png)
+![alt text](hello_world/img/gambar69.png)
 
-![alt text](img/gambar70.png)
+![alt text](hello_world/img/gambar70.png)
 
-![alt text](img/gambar71.png)
+![alt text](hello_world/img/gambar71.png)
 
 **Menambahkan halaman baru**
 
-![alt text](img/gambar72.png)
+![alt text](hello_world/img/gambar72.png)
 
-![alt text](img/gambar73.png)
+![alt text](hello_world/img/gambar73.png)
 
-![alt text](img/gambar74.png)
+![alt text](hello_world/img/gambar74.png)
 
 # Soal 5 README.md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda.
 
