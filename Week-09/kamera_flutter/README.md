@@ -80,6 +80,8 @@ Buatlah project flutter baru di pertemuan 09 dengan nama photo_filter_carousel
 
 **2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!**
 
+![alt text](img/image16.png)
+
 **3. Jelaskan maksud void async pada praktikum 1?**
 
 Async adalah tanda khusus yang kita berikan pada sebuah fungsi, yang memiliki tugas yang membutuhkan waktu lama contohnya menyalakan kamera.
