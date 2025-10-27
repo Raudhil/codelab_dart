@@ -18,37 +18,37 @@ Buatlah sebuah project flutter baru dengan nama kamera_flutter, lalu sesuaikan s
 
 **Langkah 2: Tambah dependensi yang diperlukan**
 
-![alt text](img/image1.png)
+![alt text](kamera_flutter/img/image1.png)
 
 **Langkah 3: Ambil Sensor Kamera dari device**
 
-![alt text](img/image2.png)
+![alt text](kamera_flutter/img/image2.png)
 
 **Langkah 4: Buat dan inisialisasi CameraController**
 
-![alt text](img/image3.png)
+![alt text](kamera_flutter/img/image3.png)
 
 **Langkah 5: Gunakan CameraPreview untuk menampilkan preview foto**
 
-![alt text](img/image4.png)
+![alt text](kamera_flutter/img/image4.png)
 
 **Langkah 6: Ambil foto dengan CameraController**
 
-![alt text](img/image5.png)
+![alt text](kamera_flutter/img/image5.png)
 
 **Langkah 7: Buat widget baru DisplayPictureScreen**
 
-![alt text](img/image6.png)
+![alt text](kamera_flutter/img/image6.png)
 
 **Langkah 8: Edit main.dart**
 
-![alt text](img/image7.png)
+![alt text](kamera_flutter/img/image7.png)
 
 **Langkah 9: Menampilkan hasil foto**
 
-![alt text](img/image8.png)
+![alt text](kamera_flutter/img/image8.png)
 
-![alt text](img/image9.png)
+![alt text](kamera_flutter/img/image9.png)
 
 # Praktikum 2: Membuat photo filter carousel
 
@@ -58,29 +58,29 @@ Buatlah project flutter baru di pertemuan 09 dengan nama photo_filter_carousel
 
 **Langkah 2: Buat widget Selector ring dan dark gradient**
 
-![alt text](img/image10.png)
+![alt text](kamera_flutter/img/image10.png)
 
 **Langkah 3: Buat widget photo filter carousel**    
 
-![alt text](img/image11.png)
+![alt text](kamera_flutter/img/image11.png)
 
 **Langkah 4: Membuat filter warna - bagian 1**
 
-![alt text](img/image12.png)
+![alt text](kamera_flutter/img/image12.png)
 
 **Langkah 5: Membuat filter warna**
 
-![alt text](img/image13.png)
+![alt text](kamera_flutter/img/image13.png)
 
 **Langkah 6: Implementasi filter carousel**
 
-![alt text](img/image14.png)
+![alt text](kamera_flutter/img/image14.png)
 
-![alt text](img/image15.png)
+![alt text](kamera_flutter/img/image15.png)
 
 **2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!**
 
-![alt text](img/image16.png)
+![alt text](kamera_flutter/img/image16.png)
 
 **3. Jelaskan maksud void async pada praktikum 1?**
 
