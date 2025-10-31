@@ -6,7 +6,7 @@
 
 **Kelas : TI-3G**
 
-# Tugas Praktikum 1
+# Tugas Praktikum 1: Dasar State dengan Model-View
 
 # 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki.
 
@@ -91,6 +91,71 @@ Untuk menyalakan atau inisialisasi resource saat widget pertama kali muncul, dan
 
 
 # 6. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
+# Tugas Praktikum 2: InheritedWidget
+
+# 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+
+# Praktikum 2: Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+
+**Langkah 1: Buat file plan_provider.dart**
+
+![alt text](<img/image copy 14.png>)
+
+![alt text](<img/image copy 15.png>)
+
+**Langkah 2: Edit main.dart**
+
+![alt text](<img/image copy 16.png>)
+
+**Langkah 3: Tambah method pada model plan.dart**
+
+![alt text](<img/image copy 17.png>)
+
+**Langkah 4: Pindah ke PlanScreen**
+
+![alt text](<img/image copy 18.png>)
+
+**Langkah 5: Edit method _buildAddTaskButton**
+
+![alt text](<img/image copy 19.png>)
+
+**Langkah 6: Edit method _buildTaskTile**
+
+![alt text](<img/image copy 20.png>)
+
+**Langkah 7: Edit _buildList**
+
+![alt text](<img/image copy 21.png>)
+
+**Langkah 8: Tetap di class PlanScreen**
+
+![alt text](<img/image copy 23.png>)
+
+**Langkah 9: Tambah widget SafeArea**
+
+![alt text](<img/image copy 22.png>)
+
+![alt text](gif/video3.gif)
+
+Tujuan dari kode kode diatas adalah agar tampilan daftar tugas bisa otomatis update dari data provider, tampil rapi dengan list dan progress di bawah, serta aman di semua ukuran layar.
+
+# 2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+InheritedWidget dipakai untuk menyebarkan data ke widget turunan tanpa harus terus di pass manual, sedangkan InheritedNotifier digunakan karena datanya (Plan) bisa berubah,  jadi tiap kali ValueNotifier berubah, widget-widget yang pakai data itu otomatis rebuild.
+
+# 3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+Method itu untung menghitung berapa tugas yang sudah selesai dan menampilkan pesan progresnya, agar progres plan bisa ditampilkan otomatis di UI tanpa menghitung manual di setiap tempat.
+
+# 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![alt text](gif/video4.gif)
+
+Yang telah saya buat adalah, saya membuat tampilan pesan progres tugas agar user bisa melihat berapa tugas yang sudah selesai dari total banyak tugas.
+
+# 5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
 
 
 
