@@ -156,6 +156,86 @@ Yang telah saya buat adalah, saya membuat tampilan pesan progres tugas agar user
 
 # 5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
 
+#  Tugas Praktikum 3: State di Multiple Screens
+
+# 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+
+# Praktikum 3: Membuat State di Multiple Screens
+
+**Langkah 1: Edit PlanProvider**
+
+![alt text](<img/image copy 24.png>)
+
+**Langkah 2: Edit main.dart**
+
+![alt text](<img/image copy 25.png>)
+
+**Langkah 3: Edit plan_screen.dart**
+
+![alt text](<img/image copy 26.png>)
+
+**Langkah 4: Error**
+
+Itu akan terjadi error setiap kali memanggil PlanProvider.of(context). Itu terjadi karena screen saat ini hanya menerima tugas-tugas untuk satu kelompok Plan, tapi sekarang PlanProvider menjadi list dari objek plan tersebut.
+
+**Langkah 5: Tambah getter Plan**
+
+![alt text](<img/image copy 27.png>)
+
+**Langkah 6: Method initState()**
+
+![alt text](<img/image copy 28.png>)
+
+**Langkah 7: Widget build**
+
+![alt text](<img/image copy 29.png>)
+
+**Langkah 8: Edit _buildTaskTile**
+
+![alt text](<img/image copy 30.png>)
+
+**Langkah 9: Buat screen baru**
+
+![alt text](<img/image copy 32.png>)
+
+![alt text](<img/image copy 31.png>)
+
+**Langkah 10: Pindah ke class _PlanCreatorScreenState**
+
+![alt text](<img/image copy 33.png>)
+
+**Langkah 11: Pindah ke method build**
+
+![alt text](<img/image copy 34.png>)
+
+**Langkah 12: Buat widget _buildListCreator**
+
+![alt text](<img/image copy 35.png>)
+
+**Langkah 13: Buat void addPlan()**
+
+![alt text](<img/image copy 36.png>)
+
+**Langkah 14: Buat widget _buildMasterPlans()**
+
+![alt text](<img/image copy 37.png>)
+
+![alt text](gif/video5.gif)
+
+Setelah mengerjakan praktikum 3, saya berhasil membuat plan creator screen, jadi disitu kita bisa melihat semua plan screen yang ada.
+
+# 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+Maksud dari diagram tersebut adalah, diagram tersebut menunjukkan alur navigasi flutter di mana pengguna berpindah dari halaman daftar rencana ke halaman detail rencana menggunakan Navigator.push(), yang intinya adalah, PlanCreatorScreen adalah halaman yang menunjukkan list-list tugas, dan PlanScreen adalah daftar-daftar tugas di dalam setiap list tugas pada PlanCreatorScreen.
+
+# 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+![alt text](gif/video6.gif)
+
+Fungsi kode pada langkah 14 adalah, kita membuat kode untuk menampilkan semua list tugas yang kita buat, dan jika kosong maka akan menampilkan list kosong, dan jika ada listnya bisa kita pencet dan diarahkan ke detail list tersebut.
+
+# 4. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
 
 
 
