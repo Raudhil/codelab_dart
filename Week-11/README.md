@@ -75,3 +75,29 @@ Kode tersebut mengambil data secara asinkron, jika berhasil, ia mengambil 450 ka
 **- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".**
 
 ![alt text](gif/video2.gif)
+
+# 5. Praktikum 3: Menggunakan Completer di Future
+
+**Langkah 1: Buka main.dart**
+
+**Langkah 2: Tambahkan variabel dan method**
+
+![alt text](<img/image copy 9.png>)
+
+**Langkah 3: Ganti isi kode onPressed()**
+
+![alt text](<img/image copy 10.png>)
+
+**Langkah 4:**
+
+![alt text](<img/image copy 11.png>)
+
+**Soal 5**
+
+**- Jelaskan maksud kode langkah 2 tersebut!**
+
+Kode tersebut menjelaskan sebuah operasi asinkron getNumber() yang menggunakan objek completer untuk menunggu selama 5 detik  sebelum secara manual menyelesaikan Future dengan nilai 42.
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".**
+
+![alt text](gif/video3.gif)
