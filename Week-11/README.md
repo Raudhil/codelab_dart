@@ -166,5 +166,24 @@ Perbedaan utama adalah kode pada langkah 2 hanya menangani kasus sukses setelah 
 
 ![alt text](gif/video5.gif)
 
+**Langkah 4: Tambah method handleError()**
+
+![alt text](<img/image copy 20.png>)
+
+**Soal 10**
+
+**- Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!**
+
+![alt text](<img/image copy 21.png>)
+
+Hasilnya:
+
+![alt text](<img/image copy 22.png>)
+
+Hasil sama seperti sebelumnya.
+
+
+Perbedaan utama antara kode Langkah 1 dan 4 adalah pada cara penanganan Future yang gagal, langkah 1 menggunakan metode chaining .then().catchError().whenComplete() untuk menangani sukses, gagal, dan penyelesaian, sedangkan langkah 4 menggunakan sintaks try-catch-finally dengan kata kunci await di dalam fungsi asinkron.
+
 
 
