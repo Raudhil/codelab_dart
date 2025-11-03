@@ -33,3 +33,17 @@
 **- Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan capture milik Anda dan tulis di README pada laporan praktikum. Lalu lakukan commit dengan pesan "W11: Soal 2".**
 
 ![alt text](<img/image copy 4.png>)
+
+**Langkah 5: Tambah kode di ElevatedButton**
+
+![alt text](<img/image copy 5.png>)
+
+**Soal 3**
+
+**Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!**
+
+Kode tersebut mengambil data secara asinkron, jika berhasil, ia mengambil 450 karakter pertama dari respons dan memperbarui UI, tetapi jika terjadi kesalahan, ia menampilkan pesan error pada UI.
+
+**Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 3".**
+
+![alt text](gif/video1.gif)
