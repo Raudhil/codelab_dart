@@ -119,3 +119,23 @@ Perbedaan utama adalah kode pada langkah 2 hanya menangani kasus sukses setelah 
 **- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".**
 
 ![alt text](gif/video3.gif)
+
+# Praktikum 4: Memanggil Future secara paralel
+
+**Langkah 1: Buka file main.dart**
+
+![alt text](<img/image copy 14.png>)
+
+**Langkah 2: Edit onPressed()**
+
+![alt text](<img/image copy 15.png>)
+
+**Langkah 3: Run**
+
+**Soal 7**
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 7".**
+
+![alt text](gif/video4.gif)
+
+
