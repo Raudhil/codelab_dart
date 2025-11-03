@@ -98,8 +98,8 @@ class _FuturePageState extends State<FuturePage> {
       returnTwoAsync(),
       returnThreeAsync(),
     ]);
-    
-      futures.then((List<int> value) {
+
+    futures.then((List<int> value) {
       int total = 0;
       for (var element in value) {
         total += element;
@@ -108,6 +108,11 @@ class _FuturePageState extends State<FuturePage> {
         result = total.toString();
       });
     });
+  }
+
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrible happened!');
   }
 
   @override
@@ -121,7 +126,19 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: Text('GO!'),
               onPressed: () {
-                returnFG();
+                returnError()
+                    .then((value) {
+                      setState(() {
+                        result = 'Success';
+                      });
+                    })
+                    .catchError((onError) {
+                      setState(() {
+                        result = onError.toString();
+                      });
+                    })
+                    .whenComplete(() => print('Complete'));
+                // returnFG();
                 // getNumber()
                 //     .then((value) {
                 //       setState(() {

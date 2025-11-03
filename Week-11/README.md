@@ -145,5 +145,26 @@ Perbedaan utama adalah kode pada langkah 2 hanya menangani kasus sukses setelah 
 **Soal 8: Jelaskan maksud perbedaan kode langkah 1 dan 4!**
 
  Perbedaannya adalah kode Langkah 1 menggunakan objek FutureGroup dari paket async untuk mengelompokkan dan mengelola Future, sedangkan kode Langkah 4 menggunakan fungsi bawaan Dart Future.wait untuk mencapai tujuan yang sama, yaitu menjalankan beberapa Future secara paralel dan menunggu semua hasilnya terkumpul dalam sebuah List.
+ 
+# Praktikum 5: Menangani Respon Error pada Async Code
+
+**Langkah 1: Buka file main.dart**
+
+![alt text](<img/image copy 17.png>)
+
+**Langkah 2: ElevatedButton**
+
+![alt text](<img/image copy 18.png>)
+
+**Langkah 3: Run**
+
+![alt text](<img/image copy 19.png>)
+
+**Soal 9**
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 9".**
+
+![alt text](gif/video5.gif)
+
 
 
