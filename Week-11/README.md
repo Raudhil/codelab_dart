@@ -101,3 +101,21 @@ Kode tersebut menjelaskan sebuah operasi asinkron getNumber() yang menggunakan o
 **- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 5".**
 
 ![alt text](gif/video3.gif)
+
+**Langkah 5: Ganti method calculate()**
+
+![alt text](<img/image copy 12.png>)
+
+**Langkah 6: Pindah ke onPressed()**
+
+![alt text](<img/image copy 13.png>)
+
+**Soal 6**
+
+**- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!**
+
+Perbedaan utama adalah kode pada langkah 2 hanya menangani kasus sukses setelah penundaan, sedangkan kode Langkah 5-6 meningkatkan penanganan future dengan menambahkan blok try-catch di calculate2() dan metode .catchError di onPressed, sehingga memungkinkan penanganan error yang eksplisit dan aman.
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 6".**
+
+![alt text](gif/video3.gif)
