@@ -185,5 +185,34 @@ Hasil sama seperti sebelumnya.
 
 Perbedaan utama antara kode Langkah 1 dan 4 adalah pada cara penanganan Future yang gagal, langkah 1 menggunakan metode chaining .then().catchError().whenComplete() untuk menangani sukses, gagal, dan penyelesaian, sedangkan langkah 4 menggunakan sintaks try-catch-finally dengan kata kunci await di dalam fungsi asinkron.
 
+# Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+**Langkah 1: install plugin geolocator**
+
+![alt text](<img/image copy 23.png>)
+
+**Langkah 2: Tambah permission GPS**
+
+![alt text](<img/image copy 24.png>)
+
+**Langkah 3: Buat file geolocation.dart**
+
+![alt text](<img/image copy 25.png>)
+
+**Langkah 4: Buat StatefulWidget**
+
+**Langkah 5: Isi kode geolocation.dart**
+
+![alt text](<img/image copy 26.png>)
+
+**Soal 11**
+
+**- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.**
+
+![alt text](<img/image copy 27.png>)
+
+
+
+
 
 
