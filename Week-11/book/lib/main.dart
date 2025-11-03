@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 // Impor Response dari http untuk tipe data yang benar
 import 'package:http/http.dart';
 import 'package:async/async.dart';
+import 'geolocation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const FuturePage(),
+      home: LocationScreen(),
+      // home: const FuturePage(),
     );
   }
 }
@@ -126,6 +128,7 @@ class _FuturePageState extends State<FuturePage> {
       print('Complete');
     }
   }
+  
 
   @override
   Widget build(BuildContext context) {

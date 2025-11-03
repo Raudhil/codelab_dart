@@ -211,8 +211,31 @@ Perbedaan utama antara kode Langkah 1 dan 4 adalah pada cara penanganan Future y
 
 ![alt text](<img/image copy 27.png>)
 
+**Langkah 6: Edit main.dart**
 
+![alt text](<img/image copy 28.png>)
 
+**Langkah 7: Run**
+
+![alt text](<img/image copy 29.png>)
+
+**Langkah 8: Tambahkan animasi loading**
+
+![alt text](<img/image copy 30.png>)
+
+**Soal 12**
+
+**- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));**
+
+![alt text](<img/image copy 31.png>)
+
+**- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?**
+
+Ya, saya dapat mendapatkan koordinat gps saat aplikasi Flutter di run di browser karena plugin geolocator menggunakan Web geolocation API bawaan browser untuk mengakses lokasi pengguna, meskipun akurasinya mungkin lebih rendah daripada perangkat mobile.
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 12".**
+
+![alt text](gif/video6.gif)
 
 
 
