@@ -47,3 +47,31 @@ Kode tersebut mengambil data secara asinkron, jika berhasil, ia mengambil 450 ka
 **Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 3".**
 
 ![alt text](gif/video1.gif)
+
+# Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+**Langkah 1: Buka file main.dart**
+
+![alt text](<img/image copy 6.png>)
+
+**Langkah 2: Tambah method count()**
+
+![alt text](<img/image copy 7.png>)
+
+**Langkah 3: Panggil count()**
+
+![alt text](<img/image copy 8.png>)
+
+**Langkah 4: Run**
+
+**Soal 4**
+
+**- Jelaskan maksud kode langkah 1 dan 2 tersebut!**
+
+- Langkah 1: Mendefinisikan 3 fungsi yang masing masing memberikan fungsi penundaan 3 detik
+
+- Langkah 2: Memanggil ketiga fungsi tersebut dan menampilkannya secara berurutan dengan penundaan masing masing 3 detik
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 4".**
+
+![alt text](gif/video2.gif)
