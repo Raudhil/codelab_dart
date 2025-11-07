@@ -237,5 +237,35 @@ Ya, saya dapat mendapatkan koordinat gps saat aplikasi Flutter di run di browser
 
 ![alt text](gif/video6.gif)
 
+# Praktikum 7: Manajemen Future dengan FutureBuilder
+
+**Langkah 1: Modifikasi method getPosition()**
+
+![alt text](<img/image copy 32.png>)
+
+**Langkah 2: Tambah variabel**
+
+![alt text](<img/image copy 33.png>)
+
+**Langkah 3: Tambah initState()**
+
+![alt text](<img/image copy 34.png>)
+
+**Langkah 4: Edit method build()**
+
+![alt text](<img/image copy 35.png>)
+
+**Soal 13**
+
+**- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?**
+
+Tidak ada perbedaan, kode yang baru menggunakan FutureBuilder agar secara otomatis mengelola dan menampilkan status data asinkron seperti memuat, selesai, dan error, menjadikannya lebih bersih dan efisien dibandingkan kode sebelumnya yang secara manual memicu pembaruan UI menggunakan setState().
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 13".**
+
+![alt text](gif/video7.gif)
+
+**- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.**
+
 
 
