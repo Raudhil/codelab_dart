@@ -281,3 +281,21 @@ Tidak ada perbedaan UI dengan langkah sebelumnya, karena pada kode sebelumnya ha
 
 ![alt text](gif/video7.gif)
 
+# Praktikum 8: Navigation route dengan Future Function
+
+**Langkah 1: Buat file baru navigation_first.dart**
+
+**Langkah 2: Isi kode navigation_first.dart**
+
+![alt text](<img/image copy 37.png>)
+
+**Soal 15**
+
+**- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.**
+
+![alt text](<img/image copy 38.png>)
+
+**- Silakan ganti dengan warna tema favorit Anda.**
+
+![alt text](<img/image copy 39.png>)
+
