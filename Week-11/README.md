@@ -299,3 +299,34 @@ Tidak ada perbedaan UI dengan langkah sebelumnya, karena pada kode sebelumnya ha
 
 ![alt text](<img/image copy 39.png>)
 
+**Langkah 3: Tambah method di class _NavigationFirstState**
+
+![alt text](<img/image copy 40.png>)
+
+**Langkah 4: Buat file baru navigation_second.dart**
+
+**Langkah 5: Buat class NavigationSecond dengan StatefulWidget**
+
+![alt text](<img/image copy 41.png>)
+
+**Langkah 6: Edit main.dart**
+
+![alt text](<img/image copy 42.png>)
+
+**Langkah 7: Run**
+
+**Soal 16**
+
+**- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?**
+
+Yang terjadi adalah warna latar belakang di layar NavigationFirst berubah karena Navigator.pop() di  NavigationSecond mengirimkan objek Color kembali sebagai hasil, yang kemudian ditangkap oleh await Navigator.push() di layar pertama dan digunakan untuk memperbarui color melalui setState().
+
+**- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!**
+
+![alt text](<img/image copy 43.png>)
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 16".**
+
+![alt text](gif/video8.gif)
+
+
