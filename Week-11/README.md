@@ -267,5 +267,17 @@ Tidak ada perbedaan, kode yang baru menggunakan FutureBuilder agar secara otomat
 
 **- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.**
 
+**Langkah 5: Tambah handling error**
 
+![alt text](<img/image copy 36.png>)
+
+**Soal 14**
+
+**- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?**
+
+Tidak ada perbedaan UI dengan langkah sebelumnya, karena pada kode sebelumnya hanya menampilkan error jika terjadi error, tetapi jika aplikasi berjalan dengan baik tidak ada perubahan.
+
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 14".**
+
+![alt text](gif/video7.gif)
 
