@@ -361,7 +361,7 @@ Yang terjadi adalah warna latar belakang di layar NavigationFirst berubah karena
 
 ![alt text](<img/image copy 48.png>)
 
-**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17".**
+**- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W11: Soal 17" .**
 
 ![alt text](gif/video9.gif)
 
