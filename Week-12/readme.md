@@ -138,7 +138,20 @@ Lakukan running pada aplikasi Flutter Anda, maka akan terlihat berubah warna bac
 
 ![alt text](gif/2.gif)
 
+**Langkah 13: Buka stream.dart**
 
+![alt text](<img/image copy 24.png>)
 
+**Langkah 14: Buka main.dart**
+
+![alt text](<img/image copy 25.png>)
+
+**Langkah 15: Edit method addRandomNumber()**
+
+![alt text](<img/image copy 26.png>)
+
+**Soal 7**
+
+tujuan langkah 13 hingga 15 adalah untuk mengimplementasikan penanganan kesalahan (error handling) pada NumberStream di mana kesalahan dapat dipicu secara manual (addError()) dan ditangkap oleh listener (onError) untuk memperbarui UI (lastNumber = -1).
 
 
