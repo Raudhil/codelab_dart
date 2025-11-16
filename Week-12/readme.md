@@ -44,6 +44,35 @@
 
 - Maksud Kode: Kode tersebut membuat sebuah Stream yang akan mengeluarkan objek Color dari daftar colors setiap satu detik, mengulanginya dari awal daftar setelah mencapai elemen terakhir.
 
+**Langkah 7: Buka main.dart**
+
+![alt text](<img/image copy 7.png>)
+
+**Langkah 8: Tambah variabel**
+
+![alt text](<img/image copy 8.png>)
+
+**Langkah 9: Tambah method changeColor()**
+
+![alt text](<img/image copy 9.png>)
+
+**Langkah 10: Lakukan override initState()**
+
+![alt text](<img/image copy 10.png>)
+
+**Langkah 11: Ubah isi Scaffold()**
+
+![alt text](<img/image copy 11.png>)
+
+**Langkah 12: Run**
+
+Lakukan running pada aplikasi Flutter Anda, maka akan terlihat berubah warna background setiap detik.
+
+**Soal 4**
+
+![alt text](gif/1.gif)
+
+
 
 
 
