@@ -7,5 +7,10 @@ class ColorStream {
     Colors.deepPurple,
     Colors.lightBlue,
     Colors.teal,
+    Colors.indigo,
+    Colors.cyan,
+    Colors.lime,
+    Colors.pink,
+    Colors.orange,
   ];
 }

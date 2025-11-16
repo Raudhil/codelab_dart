@@ -26,5 +26,11 @@
 
 ![alt text](<img/image copy 3.png>)
 
+**Soal 2**
+
+![alt text](<img/image copy 4.png>)
+
+
+
 
 
