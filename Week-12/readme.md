@@ -72,6 +72,16 @@ Lakukan running pada aplikasi Flutter Anda, maka akan terlihat berubah warna bac
 
 ![alt text](gif/1.gif)
 
+**Langkah 13: Ganti isi method changeColor()**
+
+![alt text](<img/image copy 12.png>)
+
+**Soal 5**
+
+- listen: cara berbasis callback yang memungkinkan kode di sekitar terus berjalan 
+
+- await for: dapat digunakan di dalam fungsi async dan akan menangguhkan eksekusi hingga setiap elemen Stream diterima.
+
 
 
 
