@@ -154,4 +154,27 @@ Lakukan running pada aplikasi Flutter Anda, maka akan terlihat berubah warna bac
 
 tujuan langkah 13 hingga 15 adalah untuk mengimplementasikan penanganan kesalahan (error handling) pada NumberStream di mana kesalahan dapat dipicu secara manual (addError()) dan ditangkap oleh listener (onError) untuk memperbarui UI (lastNumber = -1).
 
+# Praktikum 3: Injeksi data ke streams
+
+**Langkah 1: Buka main.dart**
+
+![alt text](<img/image copy 27.png>)
+
+**Langkah 2: Tambahkan kode ini di initState**
+
+![alt text](<img/image copy 28.png>)
+
+**Langkah 3: Tetap di initState**
+
+![alt text](<img/image copy 29.png>)
+
+**Langkah 4: Run**
+
+**Soal 8**
+
+Ketiga langkah tersebut berfungsi untuk membuat dan mengaktifkan StreamTransformer yang akan mengalikan nilai angka yang masuk dengan 10 atau mengganti data dengan -1 jika terjadi error, sebelum data tersebut akhirnya didengarkan oleh UI.
+
+![alt text](gif/3.gif)
+
+
 
