@@ -30,6 +30,21 @@
 
 ![alt text](<img/image copy 4.png>)
 
+**Langkah 5: Tambah method getColors()**
+
+![alt text](<img/image copy 5.png>)
+
+**Langkah 6: Tambah perintah yield***
+
+![alt text](<img/image copy 6.png>)
+
+**Soal 3**
+
+- yield*: Keyword yield* digunakan dalam fungsi generator asinkron (async*) untuk mengembalikan semua elemen dari Stream lain (atau Iterable) secara berturut-turut.
+
+- Maksud Kode: Kode tersebut membuat sebuah Stream yang akan mengeluarkan objek Color dari daftar colors setiap satu detik, mengulanginya dari awal daftar setelah mencapai elemen terakhir.
+
+
 
 
 
