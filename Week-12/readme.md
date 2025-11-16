@@ -82,7 +82,61 @@ Lakukan running pada aplikasi Flutter Anda, maka akan terlihat berubah warna bac
 
 - await for: dapat digunakan di dalam fungsi async dan akan menangguhkan eksekusi hingga setiap elemen Stream diterima.
 
+# Praktikum 2: Stream controllers dan sinks
 
+**Langkah 1: Buka file stream.dart**
+
+![alt text](<img/image copy 13.png>)
+
+**Langkah 2: Tambah class NumberStream**
+
+![alt text](<img/image copy 14.png>)
+
+**Langkah 3: Tambah StreamController**
+
+![alt text](<img/image copy 15.png>)
+
+**Langkah 4: Tambah method addNumberToSink**
+
+![alt text](<img/image copy 16.png>)
+
+**Langkah 5: Tambah method close()**
+
+![alt text](<img/image copy 17.png>)
+
+**Langkah 6: Buka main.dart**
+
+![alt text](<img/image copy 18.png>)
+
+**Langkah 7: Tambah variabel**
+
+![alt text](<img/image copy 19.png>)
+
+**Langkah 8: Edit initState()**
+
+![alt text](<img/image copy 20.png>)
+
+**Langkah 9: Edit dispose()**
+
+![alt text](<img/image copy 21.png>)
+
+**Langkah 10: Tambah method addRandomNumber()**
+
+![alt text](<img/image copy 22.png>)
+
+**Langkah 11: Edit method build()**
+
+![alt text](<img/image copy 23.png>)
+
+**Langkah 12: Run**
+
+**Soal 6**
+
+- Langkah 8 (initState): Langkah ini menginisialisasi NumberStream dan segera mendaftarkan listener yang akan memperbarui lastNumber (state UI) setiap kali angka baru dikirim ke Stream.
+
+- Langkah 10 (addRandomNumber): Langkah ini membuat angka acak antara 0 hingga 9 (inklusif) dan mengirimkannya ke Sink dari NumberStream melalui metode addNumberToSink.
+
+![alt text](gif/2.gif)
 
 
 
