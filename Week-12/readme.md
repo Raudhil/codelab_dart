@@ -176,5 +176,80 @@ Ketiga langkah tersebut berfungsi untuk membuat dan mengaktifkan StreamTransform
 
 ![alt text](gif/3.gif)
 
+# Praktikum 4: Subscribe ke stream events
 
+**Langkah 1: Tambah variabel**
 
+![alt text](<img/image copy 30.png>)
+
+**Langkah 2: Edit initState()**
+
+![alt text](<img/image copy 31.png>)
+
+**Langkah 3: Tetap di initState()**
+
+![alt text](<img/image copy 32.png>)
+
+**Langkah 4: Tambah properti onDone()**
+
+![alt text](<img/image copy 33.png>)
+
+**Langkah 5: Tambah method baru**
+
+![alt text](<img/image copy 34.png>)
+
+**Langkah 6: Pindah ke method dispose()**
+
+![alt text](<img/image copy 35.png>)
+
+**Langkah 7: Pindah ke method build()**
+
+![alt text](<img/image copy 36.png>)
+
+**Langkah 8: Edit method addRandomNumber()**
+
+![alt text](<img/image copy 37.png>)
+
+**Langkah 9: Run**
+
+**Langkah 10: Tekan button ‘Stop Subscription**
+
+![alt text](<img/image copy 38.png>)
+
+**Soal 9**
+
+Ketiga fungsi tersebut secara bersama-sama berfungsi untuk mengatur siklus hidup penuh dari Stream, mulai dari memulai langganan saat widget dibuat, mengirim data secara aman hanya jika Stream aktif, hingga membatalkan langganan saat widget dimusnahkan untuk mencegah kebocoran memori.
+
+![alt text](gif/4.gif)
+
+# Praktikum 5: Multiple stream subscriptions
+
+**Langkah 1: Buka file main.dart**
+
+![alt text](<img/image copy 41.png>)
+
+**Langkah 2: Edit initState()**
+
+![alt text](<img/image copy 40.png>)
+
+**Langkah 3: Run**
+
+**Soal 10**
+
+Alasan Terjadi error adalah karena kode mencoba listen Stream yang sama lebih dari satu kali (subscription dan subscription2) padahal secara default Stream dari StreamController hanya memperbolehkan satu subscription
+
+**Langkah 4: Set broadcast stream**
+
+![alt text](<img/image copy 42.png>)
+
+**Langkah 5: Edit method build()**
+
+![alt text](<img/image copy 43.png>)
+
+**Langkah 6: Run**
+
+**Soal 11**
+
+Hal itu bisa terjadi karena setiap kali data baru dikirim ke Stream, kedua langganan menerima event yang sama dan masing-masing menambahkan nilai tersebut ke variabel values, sehingga nilainya menumpuk dua kali lipat.
+
+![alt text](gif/5.gif)
