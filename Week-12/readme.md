@@ -253,3 +253,39 @@ Alasan Terjadi error adalah karena kode mencoba listen Stream yang sama lebih da
 Hal itu bisa terjadi karena setiap kali data baru dikirim ke Stream, kedua langganan menerima event yang sama dan masing-masing menambahkan nilai tersebut ke variabel values, sehingga nilainya menumpuk dua kali lipat.
 
 ![alt text](gif/5.gif)
+
+# Praktikum 6: StreamBuilder
+
+**Langkah 1: Buat Project Baru**
+
+**Langkah 2: Buat file baru stream.dart**
+
+![alt text](<img/image copy 44.png>)
+
+**Langkah 3: Tetap di file stream.dart**
+
+![alt text](<img/image copy 45.png>)
+
+**Langkah 4: Edit main.dart**
+
+![alt text](<img/image copy 46.png>)
+
+**Langkah 5: Tambah variabel**
+
+![alt text](<img/image copy 47.png>)
+
+**Langkah 6: Edit initState()**
+
+![alt text](<img/image copy 48.png>)
+
+**Langkah 7: Edit method build()**
+
+![alt text](<img/image copy 49.png>)
+
+**Langkah 8: Run**
+
+**Soal 12**
+
+Kedua kode tersebut berfungsi untuk membuat sebuah Stream yang menghasilkan angka acak setiap detik dan menggunakan widget StreamBuilder untuk secara otomatis memperbarui antarmuka pengguna setiap kali angka baru tersebut diterima.
+
+![alt text](gif/6.gif)
