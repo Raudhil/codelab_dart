@@ -289,3 +289,59 @@ Hal itu bisa terjadi karena setiap kali data baru dikirim ke Stream, kedua langg
 Kedua kode tersebut berfungsi untuk membuat sebuah Stream yang menghasilkan angka acak setiap detik dan menggunakan widget StreamBuilder untuk secara otomatis memperbarui antarmuka pengguna setiap kali angka baru tersebut diterima.
 
 ![alt text](gif/6.gif)
+
+# Praktikum 7: BLoC Pattern
+
+**Langkah 1: Buat Project baru**
+
+**Langkah 2: Isi kode random_bloc.dart**
+
+![alt text](<img/image copy 50.png>)
+
+**Langkah 3: Buat class RandomNumberBloc()**
+
+![alt text](<img/image copy 51.png>)
+
+**Langkah 4: Buat variabel StreamController**
+
+![alt text](<img/image copy 52.png>)
+
+**Langkah 5: Buat constructor**
+
+![alt text](<img/image copy 53.png>)
+
+**Langkah 6: Buat method dispose()**
+
+![alt text](<img/image copy 54.png>)
+
+**Langkah 7: Edit main.dart**
+
+![alt text](<img/image copy 55.png>)
+
+**Langkah 8: Buat file baru random_screen.dart**
+
+**Langkah 9: Lakukan impor material dan random_bloc.dart**
+
+![alt text](<img/image copy 56.png>)
+
+**Langkah 10: Buat StatefulWidget RandomScreen**
+
+![alt text](<img/image copy 57.png>)
+
+**Langkah 11: Buat variabel**
+
+![alt text](<img/image copy 58.png>)
+
+**Langkah 12: Buat method dispose()**
+
+![alt text](<img/image copy 59.png>)
+
+**Langkah 13: Edit method build()**
+
+![alt text](<img/image copy 60.png>)
+
+**Soal 13**
+
+Praktikum ini bertujuan untuk mendemonstrasikan pola arsitektur bloc, di mana logika bisnis yang menghasilkan angka acak dipisahkan dari UI menggunakan StreamController sebagai input dan StreamBuilder sebagai output untuk pembaruan antarmuka pengguna reaktif.
+
+![alt text](gif/7.gif)
