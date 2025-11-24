@@ -94,3 +94,9 @@ Fungsi dari kode pada langkah 3 adalah melakukan operasi untuk menulis konten st
 
 ![alt text](gif/2.gif)
 
+# **Praktikum 7: Menyimpan data dengan enkripsi/dekripsi**
+
+![alt text](gif/3.gif)
+
+Kode pada praktikum 7 untuk membuat secure storage yang men enkripsi data sebelum disimpan dan mendeskripsi saat dibaca menggunakan FlutterSecureStorage, sementara tambahan UI seperti SingleChildScrollView, penataan Row + Expanded, dan styling TextField itu ditambahkan agar layout lebih bagus.
+
