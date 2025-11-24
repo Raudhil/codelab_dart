@@ -65,3 +65,18 @@ Praktikum ini adalah Factory Constructor di Dart yang berfungsi untuk parsing da
 Kode ini dianggap lebih aman karena menggunakan fungsi konversi aman seperti tryParse dan operator null-aware (??) untuk mencegah crash saat data JSON tidak ada atau tidak konsisten, dan lebih maintainable karena menggunakan konstanta static const untuk nama kunci JSON, sehingga perubahan nama kunci hanya perlu dilakukan di satu tempat.
 
 ![alt text](<img/image copy 9.png>)
+
+# **Praktikum 4: SharedPreferences**
+
+**Hasil:**
+
+![alt text](<img/image copy 10.png>)
+
+Kode pada Langkah 1-11 berfungsi dengan cara membaca nilai penghitung aplikasi (appCounter) yang tersimpan di storage lokal (SharedPreferences), menaikkan nilai tersebut satu per satu setiap kali widget dibuat, dan kemudian menyimpan nilai yang diperbarui tersebut kembali ke storage sebelum memperbarui tampilan UI.
+
+**Soal 6**
+
+![alt text](gif/1.gif)
+
+Kode Langkah 13-14 Menambah sebuah fungsi yang digunakan untuk delete preferences yang sudah ada, oleh karena itu setiap kali tombol delete preference dipencet maka akan mengulang dari 0. 
+
