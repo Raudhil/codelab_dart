@@ -57,3 +57,11 @@ Saya membuat file paru yaitu pizzalists_broken.json dengan data yang tidka konsi
 ![alt text](<img/image copy 8.png>)
 
 Praktikum ini adalah Factory Constructor di Dart yang berfungsi untuk parsing data mentah dari JSON menjadi objek Pizza yang terstruktur dan aman, dengan secara cerdas menangani serta memberikan nilai default yang valid meskipun data JSON yang masuk tidak ada atau tidak konsisten.
+
+# **Praktikum 3: Menangani error JSON**
+
+**Soal 5**
+
+Kode ini dianggap lebih aman karena menggunakan fungsi konversi aman seperti tryParse dan operator null-aware (??) untuk mencegah crash saat data JSON tidak ada atau tidak konsisten, dan lebih maintainable karena menggunakan konstanta static const untuk nama kunci JSON, sehingga perubahan nama kunci hanya perlu dilakukan di satu tempat.
+
+![alt text](<img/image copy 9.png>)
