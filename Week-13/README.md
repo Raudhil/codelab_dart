@@ -32,3 +32,8 @@ Kode-kode pada langkah 11-21 berfungsi untuk memuat data JSON mentah, mengonvers
 
 ![alt text](<img/image copy 2.png>)
 
+**Hasil:**
+
+![alt text](<img/image copy 3.png>)
+
+Fungsi langkah 23-25 adalah melakukan fungsi konversi di mana data JSON di-encode dua kali lipat, menyebabkan tanda kutip di dalam data harus "diloloskan" (escaped) oleh encoder terluar, oleh karena itu muncul di debug console.

@@ -39,6 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
   //   });
   // }
 
+  String convertToJson(List<Pizza> pizzas) {
+    return jsonEncode(pizzas.map((pizza) => jsonEncode(pizza)).toList());
+  }
+
   Future<List<Pizza>> readJsonFile() async {
     String myString = await DefaultAssetBundle.of(
       context,
@@ -51,6 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
       myPizzas.add(myPizza);
     }
 
+    String json = convertToJson(myPizzas);
+    print(json);
+    
     return myPizzas;
   }
 
