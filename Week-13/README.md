@@ -88,3 +88,9 @@ Kode Langkah 13-14 Menambah sebuah fungsi yang digunakan untuk delete preference
 
 Kode pada langkah 1-6 ini dapat memanggil path_provider untuk mengambil jalur direktori perangkat karena fungsi getPaths() mengimpor dan menggunakan getApplicationDocumentsDirectory() dan getTemporaryDirectory() dari paket yang telah diinstal, dan penggunaan keyword await di fungsi asinkron memungkinkan eksekusi kode Dart menunggu hasil dari operasi ini.
 
+# **Praktikum 6: Akses filesystem dengan direktori**
+
+Fungsi dari kode pada langkah 3 adalah melakukan operasi untuk menulis konten string ('Margherita, Capricciosa, Napoli') ke objek file (myFile) yang telah ditentukan jalurnya, dan mengembalikan true jika penulisan berhasil atau false jika terjadi kesalahan.
+
+![alt text](gif/2.gif)
+
