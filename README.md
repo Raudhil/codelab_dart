@@ -19,4 +19,5 @@
 | Week 10 | 'Dasar State Management' | https://github.com/Raudhil/codelab_dart/tree/main/Week-10 |
 | Week 11 | 'Pemrograman Asynchronous' | https://github.com/Raudhil/codelab_dart/tree/main/Week-11 |
 | Week 12 | 'Lanjutan State Management dengan Streams' | https://github.com/Raudhil/codelab_dart/tree/main/Week-12 |
+| Week 13 | 'Persistensi Data' | https://github.com/Raudhil/codelab_dart/tree/main/Week-13 |
  
