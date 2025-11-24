@@ -59,6 +59,7 @@ flutter:
 
   assets:
     - lib/assets/pizzalists.json
+    - lib/assets/pizzalists_broken.json
 
   # To add assets to your application, add an assets section, like this:
   # assets:

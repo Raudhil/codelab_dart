@@ -6,7 +6,7 @@
 
 **Kelas : TI-3G**
 
-# Praktikum 1: Konversi Dart model ke JSON
+# **Praktikum 1: Konversi Dart model ke JSON**
 
 **Soal 1**
 
@@ -37,3 +37,23 @@ Kode-kode pada langkah 11-21 berfungsi untuk memuat data JSON mentah, mengonvers
 ![alt text](<img/image copy 3.png>)
 
 Fungsi langkah 23-25 adalah melakukan fungsi konversi di mana data JSON di-encode dua kali lipat, menyebabkan tanda kutip di dalam data harus "diloloskan" (escaped) oleh encoder terluar, oleh karena itu muncul di debug console.
+
+# **Praktikum 2: Handle kompatibilitas data JSON**
+
+Saya membuat file paru yaitu pizzalists_broken.json dengan data yang tidka konsisten
+
+![alt text](<img/image copy 5.png>)
+
+![alt text](<img/image copy 4.png>)
+
+![alt text](<img/image copy 6.png>)
+
+**Hasil**
+
+![alt text](<img/image copy 7.png>)
+
+**Soal 4**
+
+![alt text](<img/image copy 8.png>)
+
+Praktikum ini adalah Factory Constructor di Dart yang berfungsi untuk parsing data mentah dari JSON menjadi objek Pizza yang terstruktur dan aman, dengan secara cerdas menangani serta memberikan nilai default yang valid meskipun data JSON yang masuk tidak ada atau tidak konsisten.
