@@ -7,3 +7,8 @@
 **Kelas : TI-3G**
 
 # Praktikum 1: Konversi Dart model ke JSON
+
+**Soal 1**
+
+![alt text](img/image.png)
+
