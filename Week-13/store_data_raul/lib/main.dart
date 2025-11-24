@@ -12,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Raul',
-      theme: ThemeData(
-        primarySwatch: Colors.cyan,
-      ),
+      theme: ThemeData(primarySwatch: Colors.cyan),
       home: const MyHomePage(),
     );
   }
@@ -28,11 +26,28 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String pizzaString = '';
+
+  Future readJsonFile() async {
+    String myString = await DefaultAssetBundle.of(
+      context,
+    ).loadString('lib/assets/pizzalists.json');
+    setState(() {
+      pizzaString = myString;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    readJsonFile();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('JSON')),
-      body: Container(),
+      body: Text(pizzaString),
     );
   }
 }
