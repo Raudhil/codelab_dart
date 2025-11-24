@@ -80,3 +80,11 @@ Kode pada Langkah 1-11 berfungsi dengan cara membaca nilai penghitung aplikasi (
 
 Kode Langkah 13-14 Menambah sebuah fungsi yang digunakan untuk delete preferences yang sudah ada, oleh karena itu setiap kali tombol delete preference dipencet maka akan mengulang dari 0. 
 
+# **Praktikum 5: Akses filesystem dengan path_provider**
+
+**Soal 7**
+
+![alt text](<img/image copy 11.png>)
+
+Kode pada langkah 1-6 ini dapat memanggil path_provider untuk mengambil jalur direktori perangkat karena fungsi getPaths() mengimpor dan menggunakan getApplicationDocumentsDirectory() dan getTemporaryDirectory() dari paket yang telah diinstal, dan penggunaan keyword await di fungsi asinkron memungkinkan eksekusi kode Dart menunggu hasil dari operasi ini.
+
