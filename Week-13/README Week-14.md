@@ -42,3 +42,19 @@ Kode-kode pada praktikum 2 berfungsi untuk menambahkan fitur input data pizza ba
 
 ![alt text](gif/5.gif)
 
+Kode-kode pada praktikum 3 berfungsi untuk mengimplementasikan fitur CRUD lengkap Update mengedit pizza existing dengan tap pada ListTile, dan sistem otomatis memilih menggunakan POST atau PUT sesuai konteks operasinya.
+
+# **Praktikum 4: Menghapus Data dari Web Service (DELETE)**
+
+![alt text](<img/image copy 22.png>)
+
+**Soal 4**
+
+![alt text](gif/6.gif)
+
+Kode-kode pada praktikum 4 mengimplementasikan fitur DELETE dalam CRUD dengan menggunakan widget Dismissible yang memungkinkan user menghapus pizza melalui gesture swipe, kemudian mengirim request DELETE ke API untuk menghapus data dari server secara permanen.
+
+
+
+
+
