@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
-// import 'model/pizza.dart'; // Dibiarkan sebagai komentar karena class tidak disertakan
+import 'model/pizza.dart';
+import 'httphelper.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-
-// Dummy class untuk menghindari error kompilasi jika model/pizza.dart tidak ada
-class Pizza {
-  Pizza.fromJson(Map<String, dynamic> json);
-}
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +15,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -38,7 +33,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  // Variabel State dan Controller
   String pizzaString = '';
   List<Pizza> myPizzas = [];
   int appCounter = 0;
@@ -47,14 +41,16 @@ class _MyHomePageState extends State<MyHomePage> {
   late File myFile;
   String fileText = '';
   final pwdController = TextEditingController();
-  String myPass = ''; // Menyimpan hasil pembacaan Secure Storage
+  String myPass = '';
   final storage = const FlutterSecureStorage();
   final myKey = 'myPass';
-  // ... (Fungsi yang tidak digunakan dibiarkan)
 
-  // **********************************************
-  // * SECURE STORAGE METHODS *
-  // **********************************************
+  Future<List<Pizza>> callPizzas() async {
+    HttpHelper helper = HttpHelper();
+    List<Pizza> pizzas = await helper.getPizzaList();
+    return pizzas;
+  }
+
   Future<String> readFromSecureStorage() async {
     String secret = await storage.read(key: myKey) ?? '';
     return secret;
@@ -62,12 +58,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future writeToSecureStorage() async {
     await storage.write(key: myKey, value: pwdController.text);
-    // Tambahkan notifikasi atau log di sini jika diperlukan
   }
 
-  // **********************************************
-  // * FILE I/O & PATH PROVIDER METHODS *
-  // **********************************************
   Future<bool> writeFile() async {
     try {
       await myFile.writeAsString('Margherita, Capricciosa, Napoli');
@@ -80,7 +72,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Future getPaths() async {
     final docDir = await getApplicationDocumentsDirectory();
     final tempDir = await getTemporaryDirectory();
-    // Tidak perlu setState di sini, cukup di initState yang dipicu setelah selesai
     if (mounted) {
       setState(() {
         documentsPath = docDir.path;
@@ -104,22 +95,14 @@ class _MyHomePageState extends State<MyHomePage> {
     }
   }
 
-  // **********************************************
-  // * LIFECYCLE *
-  // **********************************************
   @override
   void initState() {
-    // FIX 1: super.initState() harus selalu dipanggil paling awal.
     super.initState();
-
-    // FIX 2 & 3: Tambahkan async dan await pada writeFile() untuk mengatasi
-    // race condition agar file I/O berhasil.
     getPaths().then((_) async {
       myFile = File('$documentsPath/pizzas.txt');
-      await writeFile(); // TUNGGU hingga penulisan file selesai
-
+      await writeFile();
       if (mounted) {
-        setState(() {}); // Picu rebuild setelah path dan file I/O selesai
+        setState(() {});
       }
     });
   }
@@ -133,101 +116,44 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Storage Demo')),
-      // Tambahkan SingleChildScrollView agar tidak terjadi overflow di emulator
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Dihapus karena padding SingleChildScrollView
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // ===================================
-            // BAGIAN FILE I/O (Path Provider)
-            // ===================================
-            const Text(
-              '1. File System Paths:',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 5),
-            Text('Doc path: $documentsPath'),
-            Text('Temp path: $tempPath'),
-            const SizedBox(height: 10),
-
-            ElevatedButton(
-              child: const Text('Read File'),
-              onPressed: () => readFile(),
-            ),
-            const SizedBox(height: 10),
-            Text(
-              'File Content: $fileText',
-              style: const TextStyle(fontStyle: FontStyle.italic),
-            ),
-
-            const Divider(height: 30, thickness: 1),
-
-            // ===================================
-            // BAGIAN SECURE STORAGE (FIXED PLACEMENT)
-            // ===================================
-            const Text(
-              '2. Secure Storage:',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 10),
-
-            // INPUT TEXT FIELD (Diatas Tombol)
-            TextField(
-              controller: pwdController,
-              decoration: const InputDecoration(
-                labelText: 'Enter secret value',
-                border: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.cyan),
-                ),
-              ),
-              obscureText: true,
-            ),
-            const SizedBox(height: 15),
-
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                // TOMBOL SAVE VALUE
-                Expanded(
-                  child: ElevatedButton(
-                    child: const Text('Save Value'),
-                    onPressed: () {
-                      writeToSecureStorage();
-                    },
+      appBar: AppBar(title: const Text('JSON')),
+      body: FutureBuilder(
+        future: callPizzas(),
+        builder: (BuildContext context, AsyncSnapshot<List<Pizza>> snapshot) {
+          if (snapshot.hasError) {
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text('Something went wrong'),
+                  const SizedBox(height: 16),
+                  Text('Error: ${snapshot.error}'),
+                  const SizedBox(height: 8),
+                  ElevatedButton(
+                    onPressed: () => setState(() {}),
+                    child: const Text('Retry'),
                   ),
-                ),
-                const SizedBox(width: 10),
-
-                // TOMBOL READ VALUE
-                Expanded(
-                  child: ElevatedButton(
-                    child: const Text('Read Value'),
-                    onPressed: () {
-                      readFromSecureStorage().then((value) {
-                        setState(() {
-                          myPass = value; // Menyimpan nilai yang dibaca
-                        });
-                      });
-                    },
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 15),
-
-            // OUTPUT TEXT (Dibawah Tombol, FIX 4: Ditambahkan)
-            Text(
-              'Read Result: $myPass',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: myPass.isNotEmpty ? Colors.blue : Colors.grey,
+                ],
               ),
-            ),
-          ],
-        ),
+            );
+          }
+          if (!snapshot.hasData) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          return ListView.builder(
+            itemCount: (snapshot.data == null) ? 0 : snapshot.data!.length,
+            itemBuilder: (BuildContext context, int position) {
+              return ListTile(
+                title: Text(snapshot.data![position].pizzaName),
+                subtitle: Text(
+                  snapshot.data![position].description +
+                      ' - € ' +
+                      snapshot.data![position].price.toString(),
+                ),
+              );
+            },
+          );
+        },
       ),
     );
   }
