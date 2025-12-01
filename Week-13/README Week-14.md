@@ -26,7 +26,15 @@ Kode pada praktikum 1 melakukan impelemntasi untuk mengambil data daftar pizza d
 
 ![alt text](<img/image copy 18.png>)
 
+![alt text](gif/4.gif)
+
 Kode-kode pada praktikum 2 berfungsi untuk menambahkan fitur input data pizza baru melalui form yang bisa diakses dari FloatingActionButton, kemudian mengirim data tersebut ke API menggunakan metode POST.
+
+# **Praktikum 3: Memperbarui Data di Web Service (PUT)**
+
+![alt text](<img/image copy 20.png>)
+
+![alt text](<img/image copy 19.png>)
 
 
 
