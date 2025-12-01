@@ -3,25 +3,45 @@ import 'model/pizza.dart';
 import 'httphelper.dart';
 
 class PizzaDetailScreen extends StatefulWidget {
-  const PizzaDetailScreen({super.key});
+  final Pizza pizza;
+  final bool isNew;
+
+  const PizzaDetailScreen({
+    super.key,
+    required this.pizza,
+    required this.isNew,
+  });
+
   @override
   State<PizzaDetailScreen> createState() => _PizzaDetailScreenState();
 }
 
-final TextEditingController txtId = TextEditingController();
-final TextEditingController txtName = TextEditingController();
-final TextEditingController txtDescription = TextEditingController();
-final TextEditingController txtPrice = TextEditingController();
-final TextEditingController txtImageUrl = TextEditingController();
-final TextEditingController txtCategory = TextEditingController(); // Field baru
-final TextEditingController txtRating = TextEditingController(); // Field baru
-String operationResult = '';
-
 class _PizzaDetailScreenState extends State<PizzaDetailScreen> {
+  final TextEditingController txtId = TextEditingController();
+  final TextEditingController txtName = TextEditingController();
+  final TextEditingController txtDescription = TextEditingController();
+  final TextEditingController txtPrice = TextEditingController();
+  final TextEditingController txtImageUrl = TextEditingController();
+  final TextEditingController txtCategory = TextEditingController();
+  final TextEditingController txtRating = TextEditingController();
+  String operationResult = '';
+
+  @override
+  void initState() {
+    if (!widget.isNew) {
+      txtId.text = widget.pizza.id.toString();
+      txtName.text = widget.pizza.pizzaName;
+      txtDescription.text = widget.pizza.description;
+      txtPrice.text = widget.pizza.price.toString();
+      txtImageUrl.text = widget.pizza.imageUrl;
+    }
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Pizza Detail')),
+      appBar: AppBar(title: Text(widget.isNew ? 'Add Pizza' : 'Edit Pizza')),
       body: Padding(
         padding: const EdgeInsets.all(12),
         child: SingleChildScrollView(
@@ -66,23 +86,25 @@ class _PizzaDetailScreenState extends State<PizzaDetailScreen> {
                 decoration: const InputDecoration(hintText: 'Insert Image Url'),
               ),
               const SizedBox(height: 24),
-              // Field baru: Category
               TextField(
                 controller: txtCategory,
-                decoration: const InputDecoration(hintText: 'Insert Category (e.g., Vegetarian, Meat)'),
+                decoration: const InputDecoration(
+                  hintText: 'Insert Category (e.g., Vegetarian, Meat)',
+                ),
               ),
               const SizedBox(height: 24),
-              // Field baru: Rating
               TextField(
                 controller: txtRating,
-                decoration: const InputDecoration(hintText: 'Insert Rating (0.0 - 5.0)'),
+                decoration: const InputDecoration(
+                  hintText: 'Insert Rating (0.0 - 5.0)',
+                ),
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
               ),
               const SizedBox(height: 48),
               ElevatedButton(
-                child: const Text('Send Post'),
+                child: Text(widget.isNew ? 'Add Pizza' : 'Update Pizza'),
                 onPressed: () {
-                  postPizza();
+                  savePizza();
                 },
               ),
             ],
@@ -99,12 +121,12 @@ class _PizzaDetailScreenState extends State<PizzaDetailScreen> {
     txtDescription.dispose();
     txtPrice.dispose();
     txtImageUrl.dispose();
-    txtCategory.dispose(); // Dispose field baru
-    txtRating.dispose(); // Dispose field baru
+    txtCategory.dispose();
+    txtRating.dispose();
     super.dispose();
   }
 
-  Future postPizza() async {
+  Future savePizza() async {
     HttpHelper helper = HttpHelper();
     Pizza pizza = Pizza(
       id: int.tryParse(txtId.text) ?? 0,
@@ -112,10 +134,14 @@ class _PizzaDetailScreenState extends State<PizzaDetailScreen> {
       description: txtDescription.text,
       price: double.tryParse(txtPrice.text) ?? 0.0,
       imageUrl: txtImageUrl.text,
-      category: txtCategory.text, // Field baru
-      rating: double.tryParse(txtRating.text) ?? 0.0, // Field baru
+      category: txtCategory.text,
+      rating: double.tryParse(txtRating.text) ?? 0.0,
     );
-    String result = await helper.postPizza(pizza);
+
+    final result = await (widget.isNew
+        ? helper.postPizza(pizza)
+        : helper.putPizza(pizza));
+
     setState(() {
       operationResult = result;
     });

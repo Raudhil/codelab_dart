@@ -36,5 +36,9 @@ Kode-kode pada praktikum 2 berfungsi untuk menambahkan fitur input data pizza ba
 
 ![alt text](<img/image copy 19.png>)
 
+**Soal 3**
 
+![alt text](<img/image copy 21.png>)
+
+![alt text](gif/5.gif)
 
